@@ -5,5 +5,5 @@ RUN rm -rf /etc/nginx/sites-enabled/*
 COPY webdav.conf /etc/nginx/conf.d/default.conf
 
 ADD entrypoint.sh /var
-WORKDIR /var
+RUN chmod +x /var/entrypoint.sh
 ENTRYPOINT ["/bin/bash"]
