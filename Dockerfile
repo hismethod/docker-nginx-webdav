@@ -6,4 +6,4 @@ COPY webdav.conf /etc/nginx/conf.d/default.conf
 
 ADD entrypoint.sh /var
 WORKDIR /var
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/bin/bash"]
