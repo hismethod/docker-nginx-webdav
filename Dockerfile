@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 LABEL maintainer="JUNGMIN MOON <his.methods@gmail.com>"
-RUN apt update && apt install -y nginx-extras
+RUN apt update && apt install -y nginx-extras apache2-utils
 
 VOLUME /webdav
 EXPOSE 80 443
