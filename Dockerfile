@@ -6,6 +6,7 @@ VOLUME /webdav
 EXPOSE 443
 COPY webdav.conf /etc/nginx/conf.d/default.conf
 RUN rm -rf /etc/nginx/sites-enabled/*
+COPY error.html /var/www
 
 COPY entrypoint.sh /var
 WORKDIR /var
