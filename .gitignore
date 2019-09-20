@@ -1,2 +1,5 @@
 docker-compose.yml
 test
+cert
+.cert
+error.html
